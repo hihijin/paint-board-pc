@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeMe Maker</title>
+  </head>
+  <body>
+    <div class="color-options">
+      <input type="color" id="color" />
+      <div
+        class="color-option"
+        style="background-color: #cd84f1"
+        data-color="#cd84f1"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ffcccc"
+        data-color="#ffcccc"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff4d4d"
+        data-color="#ff4d4d"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ffaf40"
+        data-color="#ffaf40"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fffa65"
+        data-color="#fffa65"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #32ff7e"
+        data-color="#32ff7e"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #7efff5"
+        data-color="#7efff5"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #18dcff"
+        data-color="#18dcff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #7d5fff"
+        data-color="#7d5fff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #4b4b4b"
+        data-color="#4b4b4b"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <div class="btn-box">
+      <input id="line-width" type="range" min="1" max="20" value="10" />
+      <button id="mode-btn">🎨채우기 모드</button>
+      <button id="destroy-btn">🪣초기화</button>
+      <button id="eraser-btn">🪄지우개</button>
+      <input type="text" placeholder="글을 쓰고 더블클릭해보세요!" id="text" />
+      <label for="file"
+        >📷이미지 업로드 하기<input type="file" accept="image/*" id="file"
+      /></label>
+      <button id="save">💾이미지 저장</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
